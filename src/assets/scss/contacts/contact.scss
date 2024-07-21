@@ -1,0 +1,80 @@
+.contact-name-circle {
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: $yellow-color;
+  color: $default-color;
+  font-size: 12px;
+  @media screen and (max-width: 376px) {
+    display: none;
+  }
+}
+.name-data {
+  width: 296px;
+  text-transform: none;
+  font-size: 14px;
+  color: $default-color;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  @media screen and (max-width: 646px) {
+    font-size: 12px;
+  }
+  @media screen and (max-width: 576px) {
+    width: 215px;
+  }
+}
+.phone-data {
+  width: 112px;
+  text-transform: none;
+  font-size: 12px;
+  color: $default-color;
+  @media screen and (max-width: 768px) {
+    width: 95px;
+  }
+}
+.email-data {
+  width: 208px;
+  text-transform: none;
+  font-size: 12px;
+  color: $default-color;
+  @media screen and (max-width: 376px) {
+    width: 98px;
+  }
+}
+.date-data {
+  width: 112px;
+  text-align: end;
+  text-transform: none;
+  font-size: 14px;
+  color: $default-color;
+
+  @media screen and (max-width: 768px) {
+    font-size: 12px;
+  }
+  @media screen and (max-width: 376px) {
+    font-size: 10px;
+  }
+}
+.phone-email {
+  display: flex;
+  gap: 88px;
+
+  @media screen and (max-width: 992px) {
+    gap: 67px;
+    padding-left: 37px;
+  }
+  @media screen and (max-width: 768px) {
+    gap: 25px;
+    padding-left: 0px;
+  }
+  @media screen and (max-width: 576px) {
+    gap: 0px;
+    flex-wrap: wrap;
+  }
+}

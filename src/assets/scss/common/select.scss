@@ -1,0 +1,19 @@
+.select {
+  background-color: $bg-color;
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px solid $grey-color;
+  width: 235px;
+  height: 40px;
+  color: $default-color;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 0 2px;
+  text-transform: uppercase;
+  @media screen and (max-width: 768px) {
+    height: 32px;
+  }
+  @media screen and (max-width: 376px) {
+    width: 219px;
+  }
+}

@@ -1,0 +1,85 @@
+// тк мы к ним обращаемся везде ниже
+@import 'utils/vars';
+@import 'utils/reset';
+
+@font-face {
+  font-family: 'ProximaNovaBold';
+  src: url('../fonts/ProximaNova/ProximaNovaRegular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'ProximaNovaBold';
+  src: url('../fonts/ProximaNova/ProximaNovaBold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+html {
+  line-height: $mainLineHeight;
+  font-size: $mainFontSize;
+  color: $default-color;
+  height: 100%;
+  @media screen and (max-width: $desktopWidth) {
+    font-size: 16px;
+  }
+  @media screen and (max-width: $tableWidth) {
+    font-size: 15px;
+  }
+  @media screen and (max-width: $phoneWidth) {
+    font-size: 14px;
+  }
+}
+
+body {
+  font-family: $mainFont;
+  font-size: $mainFontSize;
+  font-weight: $mainFontWeight;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  background-color: $bg-color;
+  color: $default-color;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.wrapper-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 70vh;
+}
+
+.container {
+  position: relative;
+  flex: 0 0 auto;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 990px;
+  @media screen and (max-width: 992px) {
+    max-width: 928px;
+  }
+  @media screen and (max-width: 768px) {
+    max-width: 704px;
+  }
+  @media screen and (max-width: 576px) {
+    max-width: 552px;
+  }
+  @media screen and (max-width: 376px) {
+    max-width: 352px;
+  }
+}
+
+@import './common/_common';
+@import './contacts/contacts';

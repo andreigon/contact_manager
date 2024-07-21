@@ -1,0 +1,74 @@
+.contacts-list {
+  padding: 9px 0;
+}
+.contacts-list__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 88px;
+  font-size: 10px;
+  color: $list-color;
+  text-transform: uppercase;
+  height: 28px;
+  border-bottom: 2px solid $border-color;
+  &.row-data {
+    height: 48px;
+  }
+  &:first-child,
+  &:last-child {
+    border-bottom: none;
+  }
+  @media screen and (max-width: 980px) {
+    gap: 40px;
+  }
+  @media screen and (max-width: 768px) {
+    gap: 57px;
+  }
+  @media screen and (max-width: 646px) {
+    gap: 10px;
+  }
+  @media screen and (max-width: 376px) {
+    &.row-data {
+      height: 56px;
+    }
+  }
+}
+
+.contact-name {
+  width: 296px;
+  @media screen and (max-width: 576px) {
+    width: 182px;
+  }
+}
+
+.contact-phone {
+  width: 112px;
+  @media screen and (max-width: 768px) {
+    width: 95px;
+  }
+  @media screen and (max-width: 576px) {
+    &::after {
+      content: '/ e-mail';
+      display: inline-block;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.contact-email {
+  width: 208px;
+  @media screen and (max-width: 576px) {
+    display: none;
+  }
+}
+
+.contact-date {
+  width: 112px;
+  text-align: end;
+  @media screen and (max-width: 576px) {
+    width: 255px;
+    // text-align: end;
+  }
+  @media screen and (max-width: 376px) {
+    width: 132px;
+  }
+}
